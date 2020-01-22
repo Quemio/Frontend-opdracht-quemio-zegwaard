@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="26px" viewBox="0 0 32 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>filter</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-8-filteren" transform="translate(-87.000000, -675.000000)">
+            <g id="filter" transform="translate(87.000000, 675.000000)">
+                <g id="Group-3">
+                    <path d="M2.66666667,4.5 L29.3442155,4.5" id="Line-4" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="square"></path>
+                    <path d="M2.66666667,13.5 L29.3442155,13.5" id="Line-4-Copy" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="square"></path>
+                    <path d="M2.66666667,22.5 L29.3442155,22.5" id="Line-4-Copy-2" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="square"></path>
+                    <ellipse id="Oval-2" fill="#FFFFFF" cx="28.952381" cy="4" rx="3.04761905" ry="4"></ellipse>
+                    <ellipse id="Oval-2-Copy-2" fill="#FFFFFF" cx="28.952381" cy="22" rx="3.04761905" ry="4"></ellipse>
+                    <ellipse id="Oval-2-Copy" fill="#FFFFFF" cx="3.04761905" cy="14" rx="3.04761905" ry="4"></ellipse>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,537 @@
+html {
+	
+	scroll-behavior: smooth;
+	
+}
+
+
+header {
+
+	background-color: #F3EEE9;
+	position: sticky;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 6em;
+	z-index: 100;
+
+
+}
+
+nav {
+
+
+	overflow: hidden;
+	font-family: roboto;
+	height: 8em;
+	text-decoration-line: none;
+
+
+}
+
+nav a {
+
+	display: flex;
+	justify-content: flex-start;
+	left: 2em;
+	color: #808282;
+	font-size: 1.1em;
+	text-decoration: none;
+	text-align: center;
+
+
+
+}
+
+
+ul {
+
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+
+
+
+}
+
+li {
+
+	text-align: center;
+	list-style: none;
+
+
+}
+
+#logo {
+
+	height: 3.5em;
+
+}
+
+.navicon {
+
+	display: flex;
+	justify-content: flex-end;
+	right: 2em;
+	color: #808282;
+	width: 2.4em;
+
+}
+
+
+/* Filter */
+
+.subnav {
+
+	background-color: #F2EEEA;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+
+}
+
+
+Fieldset {
+
+	display: flex;
+	justify-content: center;
+	background: #F3EEE9;
+	width: 100%;
+	padding: 2.6em;
+	border: none;
+
+}
+
+Fieldset p {
+
+	font-size: 1.6em;
+	font-weight: 600;
+	color: #808282;
+	margin-top: 0;
+	margin-bottom: 0.4em;
+
+}
+
+form {
+
+
+	margin-top: 4em;
+	height: 1.8em;
+	padding: 2em;
+	display: block;
+	max-width: 50%;
+
+}
+
+.example {
+
+	display: inline-block;
+
+}
+
+input[type=text] {
+
+
+	padding: 1.3em;
+	font-size: 1.3em;
+	border: 1px;
+	border-style: solid;
+	border-color: #808282;
+	background: #f1f1f1;
+	border-radius: 10px 0px 0px 10px;
+
+}
+
+#zoekbalkknop {
+
+	padding: 1.3em;
+	min-width: 4em;
+	max-width: 6em;
+	color: white;
+	font-size: 1.3em;
+	border-left: none;
+	border-radius: 0px 10px 10px 0px;
+
+	/* Prevent double borders */
+}
+
+#dropdown {
+
+	padding: 1.3em;
+	font-size: 1.3em;
+	border: 1px;
+	border-style: solid;
+	border-color: #808282;
+	background: #f1f1f1;
+	max-width: 12em;
+	height: 4em;
+	min-width: 19em;
+
+
+}
+
+#dropdown select {
+
+	display: none;
+	color: #808282;
+
+}
+
+
+
+button {
+
+	color: white;
+	font-size: 1.2em;
+	line-height: 1.25em;
+	padding: 0.4em;
+	margin: 1em aut;
+	font-weight: bold;
+	width: 12em;
+	height: 4em;
+	background-color: #9C267F;
+	border-radius: 18px;
+
+
+}
+
+#filterknop {
+
+	color: white;
+	font-size: 1.2em;
+	line-height: 1.25em;
+	padding: 0.675em;
+	margin: 1em auto;
+	font-weight: bold;
+	width: 31em;
+	background-color: #9C267F;
+	border-radius: 18px;
+	box-shadow: 0px 5px 15px -1px rgba(0, 0, 0, 0.56);
+	box-shadow: 0px 5px 15px -1px rgba(0, 0, 0, 0.56);
+
+}
+
+
+input {
+
+	display: inline-block;
+	margin: 1em 0em;
+
+}
+
+
+a:hover {
+
+	color: #a81a81;
+
+}
+
+
+input[type=range] {
+
+	width: 90%;
+
+
+}
+
+/* Styling voor de sterrenrating: ga ik niet gebruiken. */
+
+/*
+.rate {
+	
+	align-content: flex-start;
+	height: 3em;
+	padding: 0em 0.6em;
+}
+
+
+.rate:not(:checked) > input {
+	
+	display: none;
+	
+	
+}
+
+.rate:not(:checked) > label {
+	
+	float: left;
+	width: 1em;
+	overflow: hidden;
+	white-space: nowrap;
+	cursor: pointer;
+	font-size: 3.3em;
+	color:#808282;
+}
+
+.rate:not(:checked) > label:before {
+	
+	content: '★ ';
+}
+
+
+.rate > input:checked ~ label {
+	color: #9C267F;
+}
+
+
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+	color: #9C267F;
+}
+
+
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+	color: #9C267F;
+}
+*/
+
+
+
+body {
+
+	font-family: roboto;
+	width: 100%;
+	margin: 0;
+	text-decoration: none;
+
+}
+
+
+
+/*header image*/
+
+#headerimage {
+
+	width: 100%
+		
+}
+
+figure {
+
+	margin: 0em;
+	position: relative;
+	display: flex;
+	flex-direction: column-reverse;
+
+}
+
+figcaption {
+	/*het plaatsen van de tekst over de afbeelding*/
+	position: absolute;
+	color: white;
+	font-size: 2em;
+	line-height: 1.25em;
+	padding: 0.675em;
+	font-weight: bold;
+	width: 16em;
+	background-color: #9C267F;
+	bottom: 1.2em;
+	left: 1.2em;
+	border-radius: 18px;
+	box-shadow: 0px 5px 15px -1px rgba(0, 0, 0, 0.56);
+	box-shadow: 0px 5px 15px -1px rgba(0, 0, 0, 0.56);
+
+}
+
+/*filter*/
+
+/* verhalen */
+
+
+
+main {
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 6em;
+
+}
+
+h2 	{
+	
+	color: #808282;
+	font-size: 2.3em;
+	
+	
+}
+
+.icons {
+
+	height: 0.9em;
+	padding-left: 0.6em;
+	margin: 0.6em;
+	margin-top: 0em;
+	margin-bottom: 0em;
+
+}
+
+.bovensterijfooter {
+
+	display: flex;
+	justify-content: space-between;
+	height: 2.2em;
+	padding-left: 0.2em;
+	color: #808282;;
+
+}
+
+.ondersterijfooter {
+
+	display: flex;
+	justify-content: space-between;
+	height: 2.7em;
+	padding-left: 0.2em;
+	color: #808282;;
+
+}
+
+
+h3 {
+
+	padding: 0.2em;
+	margin: 0.2em;
+	font-weight: 600;
+
+}
+
+h4 {
+
+	padding: 0.2em;
+	margin: 0.2em;
+	font-weight: 300;
+
+}
+
+.verhaal {
+
+	align-content: center;
+	border-style: solid;
+	border-color: #9C267F;
+	box-shadow: 0px 5px 15px -1px rgba(0, 0, 0, 0.56);
+	box-shadow: 0px 5px 15px -1px rgba(0, 0, 0, 0.56);
+	border-radius: 18px;
+	width: 26em;
+	margin-top: 1.5em;
+	background-color: white;
+	color: black;
+	text-decoration-line: none;
+
+}
+
+.verhalen {
+
+	width: 26em;
+	align-content: center;
+	border-radius: 15px 15px 0px 0px;
+	border-radius: 15px 15px 0px 0px;
+
+}
+
+.container {
+
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 30em);
+	justify-content: center;
+
+}
+
+
+
+
+
+/*major breakpoint 1*/
+
+@media screen and (min-width: 300px) {
+
+	.container {
+
+		grid-template-columns: 1fr;
+		grid-column-gap: 30px;
+		grid-row-gap: 30px;
+
+	}
+}
+
+
+
+
+/* major breakpoint 2 */
+
+@media screen and (min-width:888px) {
+
+	.container {
+
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 30px;
+		grid-row-gap: 30px;
+
+	}
+}
+
+
+/* major breakpoint 3 */
+
+@media screen and (min-width:1300px) {
+
+	.container {
+
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap: 30px;
+		grid-row-gap: 30px;
+
+	}
+}
+
+/*
+
+4 kollomen: niet meer nodig.
+
+@media screen and (min-width:1200px) {
+	.container {
+
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-column-gap: 30px;
+		grid-row-gap: 30px;
+
+	}
+}
+
+
+
+*/
+
+/*	footer   */
+
+#real {
+	
+	display: flex;
+	justify-content: center;
+	background-color: #f2EEEA;
+	
+}
+
+h5 {
+	
+	
+	color: #808282;
+	font-size: 1em;
+	font-weight: 600;
+}
+
+#up {
+	
+	margin: 10em;
+	
+}
+
+/*
+
+footer:last-of-type {
+	
+	background-color: #F3EEE9
+}*/

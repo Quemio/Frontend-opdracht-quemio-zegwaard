@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Front-end development</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="Script/script.js"></script>
+</head>
+
+<body>
+
+
+	<header>
+
+		<!-- navigatie -->
+
+		<nav class="topnav" id="myTopnav">
+			<ul>
+				<a href="">
+					<li><img id="logo" src="styles/_img/icons/logo2.png" alt=""></li>
+				</a>
+				<a href="">
+					<li>
+						<p>login</p>
+					</li>
+				</a>
+				<a href="">
+					<li>
+						<p>opgeslagen verhalen</p>
+					</li>
+				</a>
+
+				<li><img class="navicon" src="styles/_img/icons/search.png" alt=""></li>
+
+
+
+			</ul>
+		</nav>
+	</header>
+	<main>
+
+
+		<!--bron:  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav
+		
+		Krijg ik nog niet werkend :(
+		
+		-->
+
+		<!-- backgroundimage + titel -->
+
+		<section>
+			<figure>
+				<img id="headerimage" src="styles/_img/vliegtuigvleugel.jpg" alt="">
+				<figcaption>
+					De beste verhalen van WOWair
+				</figcaption>
+
+				<!--			bron:	https://codepen.io/shooft/pen/mdbNgGd-->
+			</figure>
+		</section>
+
+
+		<!--			filter
+					
+					-->
+
+		<section class="subnav">
+			<button type="button" onclick="verbergFilter()" id="filterknop"><img src="styles/_img/icons/filter.svg" alt=""></button></section>
+
+
+		<!--  Bron javascript: https://www.w3schools.com/js/js_intro.asp
+												-->
+
+
+		<fieldset id="hideandshow">
+
+
+			<form class="example">
+				<input type="text" placeholder="Zoek.." name="search">
+				<button id="zoekbalkknop" type="submit">zoek</button>
+			</form>
+
+
+
+			<form action="">
+				<p>Genre</p>
+				<select name="Genre" id="dropdown">
+					<option value="Drama">Drama</option>
+					<option value="Vrolijk">Vrolijk</option>
+					<option value="Gek">Gek</option>
+					<option value="Droevig">Droevig</option>
+					<option value="Comedy">Comedy</option>
+					<option value="Personen">Personen</option>
+				</select>
+			</form>
+
+			<!-- bron dropdown: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_select_multiple -->
+
+			<!-- bron: https://www.w3schools.com/howto/howto_css_search_button.asp -->
+
+			<!-- <form action="">
+				<h1>Genre</h1>
+			
+				<li>
+					<input type="checkbox" value="Drama">
+					<label for="">Drama</label>
+				</li>
+			
+				<li>
+					<input type="checkbox" value="Vrolijk">
+					<label for="">Vrolijk</label>
+				</li>
+				<li>
+					<input type="checkbox" value="Gek">
+					<label for="">Gek</label>
+				</li>
+				<li>
+					<input type="checkbox" value="Droevig">
+					<label for="">Droevig</label>
+				</li>
+				<li>
+					<input type="checkbox" value="Comedy">
+					<label for="">Comedy</label>
+				</li>
+				<li>
+					<input type="checkbox" value="Personen">
+					<label for="">Personen</label>
+				</li>
+			
+			</form>
+			 -->
+
+
+
+
+
+
+			<form action="">
+				<p>Speelduur</p>
+				<input type="range" name="points" min="0" max="10"></form>
+
+			<!-- bron: sterrenrating
+	
+	https://codepen.io/tammykimkim/pen/yegZRw
+		
+			<form action="" class="rate">
+				<input type="radio" id="star1" name="rate" value="1">
+				<label for="ster1" title="text">1 stars</label>
+				<input type="radio" id="star2" name="rate" value="2">
+				<label for="ster2" title="text">2 stars</label>
+				<input type="radio" id="star3" name="rate" value="3" />
+				<label for="star3" title="text">3 stars</label>
+				<input type="radio" id="star4" name="rate" value="4" />
+				<label for="star4" title="text">4 stars</label>
+				<input type="radio" id="star5" name="rate" value="5" />
+				<label for="star5" title="text">5 star</label></form>
+-->
+
+
+
+			<form action=""><button>Vind mijn verhalen</button></form>
+		</fieldset>
+
+
+
+		<!-- Verhalen -->
+
+		<h2>99 verhalen</h2>
+
+		<section class="container">
+
+			<!--	 Deze heeft een class gekregen zodat deze in de mediaquery aangesproken kan worden-->
+
+
+
+
+			<!-- verhaal 1 -->
+
+			<article class="verhaal">
+
+				<img class="verhalen" src="styles/_img/verhalen/verhaal1.jpg" alt="">
+
+				<footer>
+
+					<section class="bovensterijfooter">
+						<h3>Verrassing</h3>
+						<h3>4 min <img src="styles/_img/icons/clock.png" class="icons" alt=""> </h3>
+					</section>
+
+					<section class="ondersterijfooter">
+						<h4>Stijloefening (99)</h4>
+						<h4>63 <img src="styles/_img/icons/like.png" class="icons" alt=""></h4>
+					</section>
+
+				</footer>
+
+			</article>
+
+			<!-- verhaal 2 -->
+
+			<article class="verhaal">
+
+				<img class="verhalen" src="styles/_img/verhalen/verhaal2.jpg" alt="">
+
+				<footer>
+
+					<section class="bovensterijfooter">
+						<h3>Beroemd</h3>
+						<h3>2 min <img src="styles/_img/icons/clock.png" class="icons" alt=""> </h3>
+					</section>
+
+					<section class="ondersterijfooter">
+						<h4>Stijloefening (98)</h4>
+						<h4>61 <img src="styles/_img/icons/like.png" class="icons" alt=""></h4>
+					</section>
+
+				</footer>
+
+			</article>
+
+			<!-- verhaal 3 -->
+
+			<article class="verhaal">
+
+				<img class="verhalen" src="styles/_img/verhalen/verhaal3.jpg" alt="">
+
+				<footer>
+
+					<section class="bovensterijfooter">
+						<h3>Freudiaans</h3>
+						<h3>3 min <img src="styles/_img/icons/clock.png" class="icons" alt=""> </h3>
+					</section>
+
+					<section class="ondersterijfooter">
+						<h4>Stijloefening (97)</h4>
+						<h4>110 <img src="styles/_img/icons/like.png" class="icons" alt=""></h4>
+					</section>
+
+				</footer>
+
+			</article>
+
+			<!-- verhaal 4 -->
+
+			<article class="verhaal">
+
+				<img class="verhalen" src="styles/_img/verhalen/verhaal5.jpg" alt="">
+
+				<footer>
+
+					<section class="bovensterijfooter">
+						<h3>Steenkolenfrans</h3>
+						<h3>4 min <img src="styles/_img/icons/clock.png" class="icons" alt=""> </h3>
+					</section>
+
+					<section class="ondersterijfooter">
+						<h4>Stijloefening (96)</h4>
+						<h4>88 <img src="styles/_img/icons/like.png" class="icons" alt=""></h4>
+					</section>
+
+				</footer>
+
+			</article>
+
+			<!-- verhaal 5 -->
+
+			<article class="verhaal">
+
+				<img class="verhalen" src="styles/_img/verhalen/verhaal6.jpg" alt="">
+
+				<footer>
+
+					<section class="bovensterijfooter">
+						<h3>Vergezocht</h3>
+						<h3>6 min <img src="styles/_img/icons/clock.png" class="icons" alt=""> </h3>
+					</section>
+
+					<section class="ondersterijfooter">
+						<h4>Stijloefening (95)</h4>
+						<h4>32 <img src="styles/_img/icons/like.png" class="icons" alt=""></h4>
+					</section>
+
+				</footer>
+
+			</article>
+
+			<!-- verhaal 6 -->
+
+			<article class="verhaal">
+
+				<img class="verhalen" src="styles/_img/verhalen/verhaal7.jpg" alt="">
+
+				<footer>
+
+					<section class="bovensterijfooter">
+						<h3>Harry Mullisch</h3>
+						<h3>3 min <img src="styles/_img/icons/clock.png" class="icons" alt=""> </h3>
+					</section>
+
+					<section class="ondersterijfooter">
+						<h4>Stijloefening (94)</h4>
+						<h4>87 <img src="styles/_img/icons/like.png" class="icons" alt=""></h4>
+					</section>
+
+				</footer>
+
+			</article>
+
+			<!-- verhaal 7 -->
+
+			<article class="verhaal">
+
+				<img class="verhalen" src="styles/_img/verhalen/verhaal8.jpg" alt="">
+
+				<footer>
+
+					<section class="bovensterijfooter">
+						<h3>Schoenlepel</h3>
+						<h3>4 min <img src="styles/_img/icons/clock.png" class="icons" alt=""> </h3>
+					</section>
+
+					<section class="ondersterijfooter">
+						<h4>Stijloefening (93)</h4>
+						<h4>22 <img src="styles/_img/icons/like.png" class="icons" alt=""></h4>
+					</section>
+
+				</footer>
+
+			</article>
+
+			<!-- verhaal 7 -->
+
+			<article class="verhaal">
+
+				<img class="verhalen" src="styles/_img/verhalen/verhaal9.jpg" alt="">
+
+				<footer>
+
+					<section class="bovensterijfooter">
+						<h3>Zonlicht</h3>
+						<h3>5 min <img src="styles/_img/icons/clock.png" class="icons" alt=""> </h3>
+					</section>
+
+					<section class="ondersterijfooter">
+						<h4>Stijloefening (92)</h4>
+						<h4> 31 <img src="styles/_img/icons/like.png" class="icons" alt=""></h4>
+					</section>
+
+				</footer>
+
+			</article>
+
+
+
+		</section>
+
+	</main>
+
+
+	<footer id="real">
+
+		<button id="up" onclick="upFunction()" title="Up">Ga naar boven</button>
+		<h5>Quemio Zegwaard | 500708349 | Front end development</h5>
+	</footer>
+</body>
+	
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="41px" viewBox="0 0 52 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>sorteren copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="DESKTOP-filteren" transform="translate(-13.000000, -1317.000000)">
+            <g id="sorteren" transform="translate(13.000000, 1316.000000)">
+                <polygon id="Triangle-2" fill="#FFFFFF" fill-rule="evenodd" points="10.5517241 42 0 26.25 21.1034483 26.25"></polygon>
+                <path d="M10.9913793,5.93055556 L10.9913793,33.1527778" id="Line-4" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="square"></path>
+                <path d="M21.9827586,39.375 L50.1206897,39.375" id="Line-5" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="square"></path>
+                <path d="M21.9827586,21 L50.1206897,21" id="Line-5-Copy-4" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="square"></path>
+                <path d="M26.3793103,30.1875 L50.1206897,30.1875" id="Line-5-Copy-2" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="square"></path>
+                <path d="M21.9827586,11.8125 L50.1206897,11.8125" id="Line-5-Copy-6" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="square"></path>
+                <path d="M21.9827586,2.625 L50.1206897,2.625" id="Line-5-Copy-7" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>
