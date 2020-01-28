@@ -479,17 +479,6 @@ h2 + section {
 	}
 }
 
-@media screen and (max-width: 500px) {
-	header a {
-	float: none;
-	display: block;
-	text-align: left;
-	}
-	
-	header-right {
-	float: none;
-	}
-
 /*	footer   */
 
 main + footer {
@@ -509,6 +498,7 @@ footer > h5 {
 }
 
 /* Verhaalpagina */
+
 
 
 section.letterlijk {
@@ -548,3 +538,4 @@ section.letterlijk > article > figure {
 	margin-bottom: 6em;
 	
 }
+
