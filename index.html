@@ -15,23 +15,23 @@
 
 		<!-- navigatie -->
 
-		<nav class="topnav" id="myTopnav">
+		<nav>
 			<ul>
-				<a href="">
-					<li><img id="logo" src="styles/_img/icons/logo2.png" alt=""></li>
+				<a href="index.html">
+					<li><img src="styles/_img/icons/logo2.png"></li>
 				</a>
-				<a href="">
+				<a>
 					<li>
 						<p>login</p>
 					</li>
 				</a>
-				<a href="">
+				<a>
 					<li>
 						<p>opgeslagen verhalen</p>
 					</li>
 				</a>
 
-				<li><img class="navicon" src="styles/_img/icons/search.png" alt=""></li>
+				<li><img src="styles/_img/icons/search.png"></li>
 
 
 
@@ -51,7 +51,7 @@
 
 		<section>
 			<figure>
-				<img id="headerimage" src="./styles/_img/vliegtuigvleugel.jpg" alt="">
+				<img src="./styles/_img/vliegtuigvleugel.jpg">
 				<figcaption>
 					De beste verhalen van WOWair
 				</figcaption>
@@ -66,26 +66,27 @@
 					-->
 
 		<section class="subnav">
-			<button type="button" onclick="verbergFilter()" id="filterknop"><img src="styles/_img/icons/filter.svg" alt=""></button></section>
+			<button type="button" onclick="verbergFilter()" id="filterknop"><img src="styles/_img/icons/filter.svg"></button></section>
 
 
 		<!--  Bron javascript: https://www.w3schools.com/js/js_intro.asp
 												-->
 
 
-		<fieldset id="hideandshow">
+		<form id="hideandshow">
 
 
-			<form class="example">
+			<fieldset>
+				<p>Zoek</p>
 				<input type="text" placeholder="Zoek.." name="search">
 				<button id="zoekbalkknop" type="submit">zoek</button>
-			</form>
+			</fieldset>
 
 
 
-			<form action="">
+			<fieldset>
 				<p>Genre</p>
-				<select name="Genre" id="dropdown">
+				<select name="Genre">
 					<option value="Drama">Drama</option>
 					<option value="Vrolijk">Vrolijk</option>
 					<option value="Gek">Gek</option>
@@ -93,7 +94,7 @@
 					<option value="Comedy">Comedy</option>
 					<option value="Personen">Personen</option>
 				</select>
-			</form>
+			</fieldset>
 
 			<!-- bron dropdown: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_select_multiple -->
 
@@ -131,14 +132,19 @@
 			</form>
 			 -->
 
+			<fieldset>
+				<p>Sorteer</p>
+				<select name="Sorteer">
+					<option value="Best beoordeeld">
+						Best beoordeeld
+					</option>
+					<option value="Meest gelezen">Meest gelezen</option>
+					<option value="Laatst toegevoegd">Laatst toegevoegd</option>
+					
+				</select>
 
 
-
-
-
-			<form action="">
-				<p>Speelduur</p>
-				<input type="range" name="points" min="0" max="10"></form>
+			</fieldset>
 
 			<!-- bron: sterrenrating
 	
@@ -159,8 +165,9 @@
 
 
 
-			<form action=""><button>Vind mijn verhalen</button></form>
-		</fieldset>
+			<fieldset><button>Vind mijn verhalen</button></fieldset>
+
+		</form>
 
 
 
@@ -168,51 +175,48 @@
 
 		<h2>99 verhalen</h2>
 
-		<section class="container">
-
-			<!--	 Deze heeft een class gekregen zodat deze in de mediaquery aangesproken kan worden-->
-
-
-
+		<section>
 
 			<!-- verhaal 1 -->
 
-			<article class="verhaal">
+			<a href="verhaalpagina.html">
+				<article>
 
-				<img class="verhalen" src="styles/_img/verhalen/verhaal1.jpg" alt="">
+					<img src="styles/_img/verhalen/verhaal1.jpg">
 
-				<footer>
+					<footer>
 
-					<section class="bovensterijfooter">
-						<h3>Verrassing</h3>
-						<h3>4 min <img src="styles/_img/icons/clock.png" class="icons" alt=""> </h3>
-					</section>
+						<section>
+							<h3>Letterlijk</h3>
+							<h3>4 min <img src="styles/_img/icons/clock.png"> </h3>
+						</section>
 
-					<section class="ondersterijfooter">
-						<h4>Stijloefening (99)</h4>
-						<h4>63 <img src="styles/_img/icons/like.png" class="icons" alt=""></h4>
-					</section>
+						<section>
+							<h4>Stijloefening (99)</h4>
+							<h4>63 <img src="styles/_img/icons/like.png"></h4>
+						</section>
 
-				</footer>
+					</footer>
 
-			</article>
+				</article>
+			</a>
 
 			<!-- verhaal 2 -->
 
-			<article class="verhaal">
+			<article>
 
-				<img class="verhalen" src="styles/_img/verhalen/verhaal2.jpg" alt="">
+				<img src="styles/_img/verhalen/verhaal2.jpg">
 
 				<footer>
 
-					<section class="bovensterijfooter">
+					<section>
 						<h3>Beroemd</h3>
-						<h3>2 min <img src="styles/_img/icons/clock.png" class="icons" alt=""> </h3>
+						<h3>2 min <img src="styles/_img/icons/clock.png"> </h3>
 					</section>
 
-					<section class="ondersterijfooter">
+					<section>
 						<h4>Stijloefening (98)</h4>
-						<h4>61 <img src="styles/_img/icons/like.png" class="icons" alt=""></h4>
+						<h4>61 <img src="styles/_img/icons/like.png"></h4>
 					</section>
 
 				</footer>
@@ -221,20 +225,20 @@
 
 			<!-- verhaal 3 -->
 
-			<article class="verhaal">
+			<article>
 
-				<img class="verhalen" src="styles/_img/verhalen/verhaal3.jpg" alt="">
+				<img src="styles/_img/verhalen/verhaal3.jpg">
 
 				<footer>
 
-					<section class="bovensterijfooter">
+					<section>
 						<h3>Freudiaans</h3>
-						<h3>3 min <img src="styles/_img/icons/clock.png" class="icons" alt=""> </h3>
+						<h3>3 min <img src="styles/_img/icons/clock.png"> </h3>
 					</section>
 
-					<section class="ondersterijfooter">
+					<section>
 						<h4>Stijloefening (97)</h4>
-						<h4>110 <img src="styles/_img/icons/like.png" class="icons" alt=""></h4>
+						<h4>110 <img src="styles/_img/icons/like.png"></h4>
 					</section>
 
 				</footer>
@@ -243,20 +247,20 @@
 
 			<!-- verhaal 4 -->
 
-			<article class="verhaal">
+			<article>
 
-				<img class="verhalen" src="styles/_img/verhalen/verhaal5.jpg" alt="">
+				<img src="styles/_img/verhalen/verhaal5.jpg">
 
 				<footer>
 
-					<section class="bovensterijfooter">
+					<section>
 						<h3>Steenkolenfrans</h3>
-						<h3>4 min <img src="styles/_img/icons/clock.png" class="icons" alt=""> </h3>
+						<h3>4 min <img src="styles/_img/icons/clock.png"> </h3>
 					</section>
 
-					<section class="ondersterijfooter">
+					<section>
 						<h4>Stijloefening (96)</h4>
-						<h4>88 <img src="styles/_img/icons/like.png" class="icons" alt=""></h4>
+						<h4>88 <img src="styles/_img/icons/like.png"></h4>
 					</section>
 
 				</footer>
@@ -265,20 +269,20 @@
 
 			<!-- verhaal 5 -->
 
-			<article class="verhaal">
+			<article>
 
-				<img class="verhalen" src="styles/_img/verhalen/verhaal6.jpg" alt="">
+				<img src="styles/_img/verhalen/verhaal6.jpg">
 
 				<footer>
 
-					<section class="bovensterijfooter">
+					<section>
 						<h3>Vergezocht</h3>
-						<h3>6 min <img src="styles/_img/icons/clock.png" class="icons" alt=""> </h3>
+						<h3>6 min <img src="styles/_img/icons/clock.png"> </h3>
 					</section>
 
-					<section class="ondersterijfooter">
+					<section>
 						<h4>Stijloefening (95)</h4>
-						<h4>32 <img src="styles/_img/icons/like.png" class="icons" alt=""></h4>
+						<h4>32 <img src="styles/_img/icons/like.png"></h4>
 					</section>
 
 				</footer>
@@ -287,20 +291,20 @@
 
 			<!-- verhaal 6 -->
 
-			<article class="verhaal">
+			<article>
 
-				<img class="verhalen" src="styles/_img/verhalen/verhaal7.jpg" alt="">
+				<img src="styles/_img/verhalen/verhaal7.jpg">
 
 				<footer>
 
-					<section class="bovensterijfooter">
+					<section>
 						<h3>Harry Mullisch</h3>
-						<h3>3 min <img src="styles/_img/icons/clock.png" class="icons" alt=""> </h3>
+						<h3>3 min <img src="styles/_img/icons/clock.png"> </h3>
 					</section>
 
-					<section class="ondersterijfooter">
+					<section>
 						<h4>Stijloefening (94)</h4>
-						<h4>87 <img src="styles/_img/icons/like.png" class="icons" alt=""></h4>
+						<h4>87 <img src="styles/_img/icons/like.png"></h4>
 					</section>
 
 				</footer>
@@ -309,20 +313,20 @@
 
 			<!-- verhaal 7 -->
 
-			<article class="verhaal">
+			<article>
 
-				<img class="verhalen" src="styles/_img/verhalen/verhaal8.jpg" alt="">
+				<img src="styles/_img/verhalen/verhaal8.jpg">
 
 				<footer>
 
-					<section class="bovensterijfooter">
+					<section>
 						<h3>Schoenlepel</h3>
-						<h3>4 min <img src="styles/_img/icons/clock.png" class="icons" alt=""> </h3>
+						<h3>4 min <img src="styles/_img/icons/clock.png"> </h3>
 					</section>
 
-					<section class="ondersterijfooter">
+					<section>
 						<h4>Stijloefening (93)</h4>
-						<h4>22 <img src="styles/_img/icons/like.png" class="icons" alt=""></h4>
+						<h4>22 <img src="styles/_img/icons/like.png"></h4>
 					</section>
 
 				</footer>
@@ -331,20 +335,20 @@
 
 			<!-- verhaal 7 -->
 
-			<article class="verhaal">
+			<article>
 
-				<img class="verhalen" src="styles/_img/verhalen/verhaal9.jpg" alt="">
+				<img src="styles/_img/verhalen/verhaal9.jpg">
 
 				<footer>
 
-					<section class="bovensterijfooter">
+					<section>
 						<h3>Zonlicht</h3>
-						<h3>5 min <img src="styles/_img/icons/clock.png" class="icons" alt=""> </h3>
+						<h3>5 min <img src="styles/_img/icons/clock.png"> </h3>
 					</section>
 
-					<section class="ondersterijfooter">
+					<section>
 						<h4>Stijloefening (92)</h4>
-						<h4> 31 <img src="styles/_img/icons/like.png" class="icons" alt=""></h4>
+						<h4> 31 <img src="styles/_img/icons/like.png"></h4>
 					</section>
 
 				</footer>
@@ -358,12 +362,11 @@
 	</main>
 
 
-	<footer id="real">
+	<footer>
 
-		<button id="up" onclick="upFunction()" title="Up">Ga naar boven</button>
 		<h5>Quemio Zegwaard | 500708349 | Front end development</h5>
 	</footer>
 	<script src="Script/script.js"></script>
 </body>
-	
+
 </html>
