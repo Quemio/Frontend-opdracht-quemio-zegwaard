@@ -173,6 +173,15 @@ button:hover {
 
 }
 
+button:active {
+
+	border: 30px;
+	border-color: #9C267F 50%;
+	
+
+
+}
+
 #filterknop {
 
 	color: white;
@@ -189,6 +198,7 @@ button:hover {
 
 }
 
+
 input {
 
 	display: inline-block;
@@ -197,11 +207,10 @@ input {
 }
 
 input:active {
-	
+
 	border-style: solid;
 	border-color: #9C267F;
 	border: 10px
-	
 }
 
 a:hover {
@@ -316,17 +325,86 @@ main {
 	margin-bottom: 6em;
 
 }
+/*
+
+
+Bron: https://www.youtube.com/watch?v=zGiirUiWslI
+*/
+
+h2::before {
+	
+	content: '';
+	background: #9C267F;
+	display: block;
+	width: 5px;
+	height: 2.3;
+	margin-right: 0.4em;
+	
+}
 
 h2 {
 
 	display: flex;
 	justify-content: center;
 	margin: 1em;
-	color: #808282;
+	color: #434444;
 	font-size: 2.3em;
 	width: 100%;
+	transition: transform 0.1s;
 
 }
+
+h2:hover {
+	
+	transform: scale(0.72);
+	opacity: inherit;
+}
+
+h2::after {
+	
+	content: '';
+	background: #9C267F;
+	display: block;
+	width: 5px;
+	height: 2.3;
+	margin-left: 0.4em;
+	
+}
+
+blockquote::before {
+	
+	content: open-quote;
+	font-weight: 700;
+	font-size: 2.3em;
+	color: #ddd;
+	margin-right: .6em;
+	
+	
+}
+
+blockquote {
+	
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	color: #808282;
+	font-size: 1.3em;
+	font-style: italic
+	
+}
+
+blockquote::after {
+	
+	content: close-quote;
+	font-weight: 700;
+	font-size: 2.3em;
+	color: #ddd;
+	margin-left: .6em;
+	
+	
+}
+
+
 
 footer img {
 
@@ -499,8 +577,6 @@ footer > h5 {
 
 /* Verhaalpagina */
 
-
-
 section.letterlijk {
 
 	display: flex;
@@ -512,30 +588,29 @@ section.letterlijk {
 }
 
 section.letterlijk > article {
-	
+
 	padding: 6em;
 	width: 80%;
 	border-style: none;
 	margin-top: 7em;
-	
+
 }
 
 section.letterlijk > article > p {
-	
+
 	font-size: 1.4em;
 	padding: 0em 1em 1em 0em;
-	
+
 }
 
 section.letterlijk button {
-	
+
 	margin-top: 3em;
-	
+
 }
 
 section.letterlijk > article > figure {
-	
-	margin-bottom: 6em;
-	
-}
 
+	margin-bottom: 6em;
+
+}
